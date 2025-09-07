@@ -12,7 +12,7 @@ h1{
 
 img {
     width: auto;    
-    height: 100px;    /* Mantiene la proporción original */
+    height: 300px;    /* Mantiene la proporción original */
     display: block;  /* Opcional: elimina espacios debajo de la imagen */
 }
 
