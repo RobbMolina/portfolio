@@ -37,6 +37,7 @@ img {
     gap: 20px;
     font-size: large;
     height: 15vh;
+    overflow-x: auto;
 }
 
 .oferta-container{
