@@ -36,7 +36,8 @@ img {
     display: flex;
     gap: 20px;
     font-size: large;
-    height: 15vh;
+    height: 25vh;
+    width: 100%;
     overflow-x: auto;
 }
 
