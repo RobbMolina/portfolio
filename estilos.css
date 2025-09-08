@@ -1,68 +1,185 @@
+:root {
+    --fondo-pagina: #f0f0f0;
+    --color-fuente: #373F47;
+    --blanco: #ffffff;
+    --gris-claro: #e0e0e0;
+    --naranja: #DD7230;
+}
+
 body {
     margin: 0;
     padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(233, 233, 233);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--fondo-pagina);
+    color: var(--color-fuente);
 
 }
 
-h1{
-    color: white;
-}
 
 img {
     width: auto;    
-    height: 300px;    /* Mantiene la proporción original */
+    height: 150px;    /* Mantiene la proporción original */
     display: block;  /* Opcional: elimina espacios debajo de la imagen */
 }
 
+a {
+    text-decoration: none;
+}
 
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
 
 .header{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--blanco);
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 10vh;
+    justify-content: space-between;
+    height: 8vh;
+    font-size: 20px;
+    padding: 0 2rem;
 }
 
-.content {
-    margin: 1rem;
-    max-width: 800px;
-    width: 90%;
-}
-
-.ofertas-section{
+.header ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
-    font-size: large;
-    height: 25vh;
-    width: 100%;
-    overflow-x: auto;
-}
-
-.oferta-container{
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    width: 200rem;
-    height: 100%;
-    display: flex;
-    gap: 5px;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
-.oferta-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.header ul li {
+    margin: 0 1rem;
 }
 
-ul{
-    padding: 20px;
-    height: auto;
-    width: 50%;
-    border-radius: 10px;
+.header a {
+    color: var(--color-fuente);
+    text-decoration: none;
+}
+.header a:hover {
+    color: var(--naranja); 
+}
 
+.header button {
+    font-size: 24px;
+    color: var(--color-fuente);
+}
+
+/* Oculta el botón por defecto */
+.header button {
+    display: none;
+}
+
+.oferta-container {
+        background-color: var(--blanco);
+    }
+
+.ofertas-section {
+        display: flex;
+        height: auto;
+        gap: 16px;
+    }
+
+/* Solo muestra el botón en pantallas pequeñas */
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 1rem 2rem;
+        transition: max-height 0.4s ease;
+        overflow: hidden;
+    }
+    .header button {
+        display: block;
+        align-self: flex-end;
+        margin-top: 0.5rem;
+        z-index: 101;
+    }
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        box-shadow: none;
+        position: static;
+    }
+    .header ul.active {
+        max-height: 300px; /* Ajusta según la cantidad de elementos */
+        opacity: 1;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .oferta-container {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: stretch; /* Hace que los hijos ocupen todo el ancho */
+        height: auto;
+        padding: 1rem;
+    }
+     .header h3 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+   
+    .content {
+        width: 98%;
+        margin: 0.5rem;
+        max-width: 100%;
+    }
+    .ofertas-section {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .oferta-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    .header h3 {
+        font-size: 1.1rem;
+    }
+    .content {
+        padding: 0.5rem;
+    }
+    .oferta-container {
+        padding: 6px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
