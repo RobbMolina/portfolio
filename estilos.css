@@ -74,12 +74,16 @@ button {
 
 .oferta-container {
         background-color: var(--blanco);
+        border-radius: 20px;
+        display: flex;
+        width: 20rem;
     }
 
 .ofertas-section {
         display: flex;
         height: auto;
         gap: 16px;
+        padding: 1rem;
     }
 
 /* Solo muestra el botón en pantallas pequeñas */
@@ -122,12 +126,6 @@ button {
 }
 
 @media (max-width: 900px) {
-    .oferta-container {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-    }
-
     .header {
         flex-direction: column;
         align-items: stretch; /* Hace que los hijos ocupen todo el ancho */
@@ -151,12 +149,6 @@ button {
         flex-direction: column;
         gap: 12px;
     }
-    .oferta-container {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
     img {
         width: 100%;
         height: auto;
@@ -174,9 +166,6 @@ button {
     }
     .content {
         padding: 0.5rem;
-    }
-    .oferta-container {
-        padding: 6px;
     }
     img {
         max-width: 100%;

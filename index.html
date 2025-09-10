@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="header">
-        <h3>Mi porfalio</h3>
-        <ul>
-            <li><a href="#about">Acerca de</a></li>
-            <li><a href="#sucursales">Sucursales</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#planes">Planes</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-        <button class="menu-header" type="submit">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <h3>AM fitness</h3>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#sucursales">Sucursales</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="menu-header" type="submit">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-    
-
 
     <div class="content">
-        <h2>Aqui una gran variedad de fotos de nuestro CEO</h2>
-
-        <div class="ofertas-section">
-            <div class="oferta-container">
-                <img src="assets/imgs/xbox.png" alt="imagen de una xbox">
-                <div class="oferta-info">
-                    <h4>Xbox Series X</h4>
-                    <p>Descripción de la oferta</p>
-                </div>
-            </div>
-            <div class="oferta-container">
-                <img src="assets/imgs/ps5r.jpg" alt="imagen de una playstation 5">
-                <div class="oferta-info">
-                    <h4>PlayStation 5</h4>
-                    <p>Descripción de la oferta</p>
-                </div>
-            </div>
-            <div class="oferta-container">
-                <img src="assets/imgs/sw2.avif" alt="imagen de una nintendo switch">
-                <div class="oferta-info">
-                    <h4>Nintendo Switch</h4>
-                    <p>Descripción de la oferta</p>
-                </div>
-            </div>
-            
+      <div class="ofertas-section">
+        <div class="oferta-container">
+          <img src="assets/imgs/xbox.png" alt="imagen de una xbox" />
+          <div class="oferta-info">
+            <h4>Xbox Series X</h4>
+            <p>Descripción de la oferta</p>
+          </div>
         </div>
-       
+        <div class="oferta-container">
+          <img src="assets/imgs/sw2.avif" alt="imagen de una nintendo switch" />
+          <div class="oferta-info">
+            <p>Nintendo Switch</p>
+            <p>Descripción de la ofera</p>
+            <div>
+                <div class="precioactual">9000</div>
+                <div class="precioanterior">12000</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.menu-header');
-            const menuList = document.querySelector('.header ul');
-            menuBtn.addEventListener('click', function() {
-                menuList.classList.toggle('active');
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".menu-header");
+        const menuList = document.querySelector(".header ul");
+        menuBtn.addEventListener("click", function () {
+          menuList.classList.toggle("active");
         });
+      });
     </script>
-</body>
+  </body>
 </html>
