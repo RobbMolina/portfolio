@@ -1,0 +1,25 @@
+/*Fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  gap: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box; /* Asegura que padding y border no agranden el ancho total */
+}
+
+:root {
+  --color-primario: #e1330b; /*botones, fuente*/
+  --color-secundario: #9bc1bc; /* Ash gray */
+  --color-acento: #5ca4a9; /* Verdigris */
+  --color-fondo-oscuro: #031926; /* Rich black */
+  --font-secundario: #a6a7b3; /* texto secundario gris*/
+  --color-box-gray: #f6f7fa; /*boxes*/
+}

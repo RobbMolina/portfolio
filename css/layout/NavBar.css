@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar li {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.navbar li:hover {
+  color: var(--color-primario);
+}

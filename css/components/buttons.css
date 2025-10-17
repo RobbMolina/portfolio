@@ -1,0 +1,13 @@
+button {
+  background-color: var(--color-primario);
+  padding: 0.5rem;
+  border-radius: 15px;
+  /*width: 100%;*/
+  color: white;
+  border: none;
+  font-family: "Nunito", sans-serif;
+}
+
+button :hover{
+    cursor: pointer;
+}

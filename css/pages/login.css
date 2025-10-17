@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.Login-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  background-color: white;
+}
+
+.intro-text{
+    color: var(--font-secundario);
+}
+.forgotten-password{
+    color: var(--color-primario);
+    text-decoration: none;
+    text-align: right;
+}
+
+.box-textfields {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: .5rem;
+}
+.box-textfields p {
+  font-weight: 700;
+}
+
+.box-textfields input {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #d1d9e6;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.Login-box button {
+  width: 100%;
+}
+
+
+
+.Login-box h1,
+.Login-box h2,
+.Login-box h3,
+.Login-box p {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
