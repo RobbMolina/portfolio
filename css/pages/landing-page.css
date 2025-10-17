@@ -66,9 +66,23 @@
   height: 15rem;
   width: 25rem;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-box-content {
+  margin: 3rem 0;
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
+}
+
+/*Iconos landing page*/
+i {
+  font-size: 2rem;
+  color: var(--color-primario);
+  margin: 8px;
+}
+
+.text-service {
+  margin: 0;
+  font-size: 20px;
 }
